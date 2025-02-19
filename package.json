@@ -1,0 +1,63 @@
+{
+  "name": "zhujici",
+  "version": "1.0.0",
+  "description": "wallet include hd and AA wallet",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "browser": "dist/umd/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FishcakeLab/wallet-sdk.git"
+  },
+  "author": "seek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FishcakeLab/wallet-sdk/issues"
+  },
+  "homepage": "https://github.com/FishcakeLab/wallet-sdk#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ethereumjs/common": "2.4.0",
+    "@ethereumjs/tx": "3.2.1",
+    "@ethersproject/abi": "5.4.0",
+    "bignumber.js": "9.0.1",
+    "bip32": "^5.0.0-rc.0",
+    "bip39": "^3.0.4",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.25.7",
+    "@babel/preset-env": "^7.25.8",
+    "@types/jest": "^27",
+    "@umijs/test": "^4",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-preset-minify": "^0.5.2",
+    "father": "^4.5.1-beta.4",
+    "jest": "^30.0.0-alpha.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-node": "^10",
+    "typescript": "^4"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.0.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/cjs/index.d.ts"
+    }
+  }
+}
