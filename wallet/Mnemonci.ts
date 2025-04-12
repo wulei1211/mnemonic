@@ -15,12 +15,12 @@ export function generateMnemonicPhrase(strength = 128) {
 }
 
 // 验证助记词有效性
-function validateMnemonic(mnemonic) {
+function validateMnemonic(mnemonic: string) {
     return bip39.validateMnemonic(mnemonic, wordlist);
 }
 
 
 
-const mnemonic = generateMnemonicPhrase();
-console.log('Generated Mnemonic:', mnemonic);
-console.log('Is Valid?', validateMnemonic(mnemonic));
+// const mnemonic = generateMnemonicPhrase();
+// console.log('Generated Mnemonic:', mnemonic);
+// console.log('Is Valid?', validateMnemonic(mnemonic));

@@ -6,9 +6,9 @@ import {generateMnemonicPhrase} from "../wallet/Mnemonci";
 describe("",()=>{
     test("",()=>{
         CreateMnemonic();
+        // generateMnemonicPhrase();
+    })
+    it("",()=>{
         generateMnemonicPhrase();
     })
-    // it("",()=>{
-    //     CreateMnemonic();
-    // })
 })
