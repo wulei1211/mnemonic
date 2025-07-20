@@ -5,10 +5,10 @@ import {generateMnemonicPhrase} from "../wallet/Mnemonci";
 // HelloWord();
 describe("",()=>{
     test("",()=>{
-        CreateMnemonic(18);
-        // generateMnemonicPhrase();
+        // CreateMnemonic(18);
+        generateMnemonicPhrase();
     })
-    // it("",()=>{
-    //     generateMnemonicPhrase();
-    // })
+    it("",()=>{
+        generateMnemonicPhrase();
+    })
 })
